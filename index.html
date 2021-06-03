@@ -9,7 +9,89 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/bookmark-logo.svg" alt="logo of bookmark" width="150" height="25">
+      </a>
 
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">FEATURES</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">PRICING</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">CONTACT</a>
+          </li>
+        </ul>
+        <a class=" button button--login button--login--active"  href="#">Login</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="site-content">
+    <h1 class="visually-hidden">BookMark extension</h1>
+    <section class="hero">
+      <div class="hero__container container">
+        <header class="hero__header">
+          <h2 class="hero__heading ">A Simple Bookmark Manager</h2>
+          <p class="hero__info section-info">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        </header>
+        <div class="hero__links">
+          <a class="hero__link hero__link button button--blue" href="#">Get it on Chrome</a>
+          <a class="hero__link button button--grey" href="#">Get it on Firefox</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="extensions">
+      <div class="extensions__container container">
+        <header class="extensions__header">
+          <h2 class="extensions__heading section-heading">Download the extension</h2>
+          <p class="extensions__info section-info">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+        </header>
+
+        <ul class="extensions__list">
+          <li class="extensions__item extension extension--chrome">
+            <div class="extension__top">
+              <h3 class="extension__heading">Add to Chrome</h3>
+              <p class="extension__info">Minimum version 62</p>
+            </div>
+            <div class="extension__bottom ">
+              <a class="button button--extension button--block" href="#" target="_blank">Add & Install Extension</a>
+            </div>
+          </li>
+
+           <li class="extensions__item extension extension--firefox">
+             <div class="extension__top">
+               <h3 class="extension__heading">Add to Chrome</h3>
+               <p class="extension__info">Minimum version 62</p>
+             </div>
+             <div class="extension__bottom ">
+               <a class="button button--extension button--block" href="#" target="_blank">Add & Install Extension</a>
+             </div>
+           </li>
+
+           <li class="extensions__item extension extension--opera">
+             <div class="extension__top">
+               <h3 class="extension__heading">Add to Chrome</h3>
+               <p class="extension__info">Minimum version 62</p>
+             </div>
+             <div class="extension__bottom ">
+               <a class="button button--extension button--block" href="#" target="_blank">Add & Install Extension</a>
+             </div>
+           </li>
+
+
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
