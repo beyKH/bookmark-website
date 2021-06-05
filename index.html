@@ -36,6 +36,8 @@
 
   <main class="site-content">
     <h1 class="visually-hidden">BookMark extension</h1>
+
+    <!-- HERO SECTION -->
     <section class="hero">
       <div class="hero__container container">
         <header class="hero__header">
@@ -49,6 +51,36 @@
       </div>
     </section>
 
+    <!-- FEATURES SECTION -->
+    <section class="features">
+      <div class="features__container container">
+        <header class="features__header">
+          <h2 class="features__heading">Features</h2>
+          <p class="features__info">Our aim is to make it quick and easy for you to access your favourite websites. Your
+            bookmarks sync between your devices so you can access them on the go.</p>
+        </header>
+
+        <ul class="features__list">
+          <li class="featues__item features__item--active">Simple Bookmarking</li>
+          <li class="featues__item">Speedy Searching</li>
+          <li class="featues__item">Easy Sharing</li>
+        </ul>
+
+
+          <div class="features__box">
+            <h2 class="features__box--heading">Bookmark in one click</h2>
+            <p class="features__box--heading">Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites.</p>
+              <footer class="features__footer">
+                <a class="features__button-more button button--block button--more-info" href="#">More</a>
+              </footer>
+          </div>
+
+
+      </div>
+    </section>
+
+    <!-- EXTENSIONS SECTION -->
     <section class="extensions">
       <div class="extensions__container container">
         <header class="extensions__header">
@@ -89,7 +121,6 @@
         </ul>
       </div>
     </section>
-
 
     <!-- FAQ SECTION -->
     <section class="faq">
@@ -169,15 +200,21 @@
         <div class="active-users__main">
           <h2 class="active-users__heading">Stay up-to-date with what we’re doing</h2>
           <form class="active-users__form" action="https://echo.htmlacademy.ru" method="POST">
-              <input class="active-users__input input-field" id="email" type="email" placeholder="email" required>
-              <p class="input-field__info"></p>
+
+            <div class="active-users__input-wrapper">
+              <input type="email" class="active-users__input input" placeholder="email" required>
+              <div class="input__error-box">
+                <span>Whoops, make sure it’s an email</span>
+              </div>
+            </div>
+
             <button class="button button--danger button--danger--active ">Contact Us</button>
           </form>
         </div>
       </div>
     </section>
-
   </main>
+  <!-- SITE FOOTER -->
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__left">
@@ -201,10 +238,23 @@
       <div class="footer__right">
         <ul class="footer__social-list">
           <li class="footer__social-item social-network">
-            <a href="#" target="" class="social-network__link facebook-link"></a>
+            <a href="#" target="" class="social-network__link facebook-link">
+              <svg class="social__img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                  fill="currenColor"></path>
+              </svg>
+            </a>
           </li>
           <li class="footer__social-item social-network">
-            <a href="#" target="" class="social-network__link twitter-link"></a>
+            <a href="#" target="" class="social-network__link twitter-link">
+              <svg width="24" height="20" viewBox="0 0 24 20"  xmlns="http://www.w3.org/2000/svg">
+                <path id="twitter" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24 2.55705C23.117 2.94905 22.168 3.21305 21.172 3.33205C22.189 2.72305 22.97 1.75805 23.337 0.608047C22.386 1.17205 21.332 1.58205 20.21 1.80305C19.313 0.846047 18.032 0.248047 16.616 0.248047C13.437 0.248047 11.101 3.21405 11.819 6.29305C7.728 6.08805 4.1 4.12805 1.671 1.14905C0.381 3.36205 1.002 6.25705 3.194 7.72305C2.388 7.69705 1.628 7.47605 0.965 7.10705C0.911 9.38805 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10605C22.505 4.41105 23.34 3.54405 24 2.55705Z"
+                  fill="currenColor" />
+              </svg>
+
+            </a>
           </li>
         </ul>
       </div>
