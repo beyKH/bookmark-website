@@ -90,7 +90,77 @@
       </div>
     </section>
 
-    <!-- NUMBER OF USERS -->
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+      <div class="faq-container container">
+        <div class="faq__desc ">
+          <h2 class="faq__heading">Frequently Asked Questions</h2>
+          <p class="faq__info">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+        </div>
+
+        <ul class="faq__list ">
+          <li class="faq__item qa">
+            <header class="qa__header">
+              <h3 class="qa__question">What is Bookmark?</h3>
+              <button class="qa__togler"></button>
+            </header>
+            <div class="qa__answer ">
+              <p class="qa__header-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </li>
+
+          <li class="faq__item qa">
+            <header class="qa__header">
+              <h3 class="qa__question">How can I request a new browser?</h3>
+              <button class="qa__togler"></button>
+            </header>
+            <div class="qa__answer ">
+              <p class="qa__header-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </li>
+
+          <li class="faq__item qa">
+            <header class="qa__header">
+              <h3 class="qa__question">Is there a mobile app?</h3>
+              <button class="qa__togler"></button>
+            </header>
+            <div class="qa__answer ">
+              <p class="qa__header-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </li>
+
+          <li class="faq__item qa">
+            <header class="qa__header">
+              <h3 class="qa__question">What about other Chromium browsers?</h3>
+              <button class="qa__togler"></button>
+            </header>
+            <div class="qa__answer ">
+              <p class="qa__header-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </li>
+        </ul>
+
+        <footer class="faq__footer">
+          <a class="faq__button-more button button--block button--more-info" href="#">More</a>
+        </footer>
+
+      </div>
+    </section>
+
+     <!-- NUMBER OF USERS -->
     <section class="active-users">
       <div class="container active-user__container">
         <div class="active-users__top">
@@ -99,29 +169,53 @@
         <div class="active-users__main">
           <h2 class="active-users__heading">Stay up-to-date with what we’re doing</h2>
           <form class="active-users__form" action="https://echo.htmlacademy.ru" method="POST">
-            <label for="email">
-              <input class="" id="email" type="email">
-            </label>
+              <input class="active-users__input input-field" id="email" type="email" placeholder="email" required>
+              <p class="input-field__info"></p>
+            <button class="button button--danger button--danger--active ">Contact Us</button>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="faq">
-      <div class="faq-container container">
-        <div class="faq__box">
-          <div class="faq__box__inner">
-            <h3 >What is Bookmark?</h3>
-            <button class="faq__btn"></button>
-          </div>
-          <p class="faq__box__response ">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-        </div>
-
-      </div>
-    </section>
-
   </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__left">
+        <a class="footer__logo logo" href="index.html">
+          <img class="logo-img" src="img/logo-light.svg" alt=""
+          width="148" height="25">
+        </a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">FEATURES</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">PRICING</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="footer__right">
+        <ul class="footer__social-list">
+          <li class="footer__social-item social-network">
+            <a href="#" target="" class="social-network__link facebook-link"></a>
+          </li>
+          <li class="footer__social-item social-network">
+            <a href="#" target="" class="social-network__link twitter-link"></a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+
+
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>

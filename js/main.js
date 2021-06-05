@@ -1,11 +1,14 @@
-var elFaqOpenButton = document.querySelectorAll('.faq__box');
-var elAnswer = document.querySelector('.faq__box__response');
+var elsQaItem = document.querySelectorAll('.faq__item');
+var elsButton = document.querySelectorAll('.qa__togler');
 
-
-elFaqOpenButton.forEach(function (button) {
+elsButton.forEach(function (button) {
   button.addEventListener('click',function () {
-    elAnswer.classList.toggle('faq__box__response__block');
+
+      elsQaItem.forEach(function (qa) {
+        qa.classList.remove('qa--active');
+      })
+
+      button.closest('.qa').classList.add('qa--active');
   })
-
-
 })
+
