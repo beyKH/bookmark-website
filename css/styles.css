@@ -230,6 +230,11 @@ body {
 .hero__link{
   padding: 10px 24px;
   box-shadow: var(--main-box-shadow);
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+
 }
 
 .hero__link:not(:last-child){
@@ -255,7 +260,7 @@ body {
 
 .button--grey:hover{
   border-color: rgba(36, 42, 69, 0.75);
-
+  background-color: transparent;
 }
 
 /* FEATURES */
@@ -306,6 +311,8 @@ body {
   margin-right: auto;
   display: flex;
   width: 730px;
+  display: flex;
+  justify-content: center;
   list-style: none;
   border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
 
@@ -313,6 +320,9 @@ body {
 
 .featues__item{
   padding: 27px 45px;
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
   font-weight: normal;
   font-size: 16px;
   line-height: 17px;
@@ -451,16 +461,16 @@ body {
   opacity: 0.5;
 }
 
-.extension__bottom::before{
+.extension-dottes::before {
   content: '';
   background-image: url("../img/dotted.png");
   width: 100%;
   height: 4px;
   background-repeat: no-repeat;
   display: block;
-  background-size: contain;
-  margin-bottom: 20px;
+  background-position: center center;
 }
+
 
 .extension__bottom {
   padding: 24px;
@@ -643,6 +653,7 @@ body {
   width: 540px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 56px;
   text-align: center;
 }
 
@@ -683,6 +694,10 @@ body {
   border-top: 1px solid rgba(36, 42, 69, 0.15);
 }
 
+.faq__item:hover .qa__header{
+  color: var(--main-danger-color);
+}
+
 .qa {}
 
 .qa__header {
@@ -690,6 +705,7 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
+  transition: color 0.3s ease;
 }
 
 .qa__question {
