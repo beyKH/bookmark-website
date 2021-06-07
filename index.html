@@ -52,32 +52,67 @@
     </section>
 
     <!-- FEATURES SECTION -->
-    <section class="features">
+    <section class="features tab">
       <div class="features__container container">
         <header class="features__header">
           <h2 class="features__heading">Features</h2>
           <p class="features__info">Our aim is to make it quick and easy for you to access your favourite websites. Your
             bookmarks sync between your devices so you can access them on the go.</p>
         </header>
-
-        <ul class="features__list">
-          <li class="featues__item ">Simple Bookmarking</li>
-          <butlion class="featues__item">Speedy Searching</butlion>
-          <li class="featues__item">Easy Sharing</li>
-        </ul>
-
-
-          <div class="features__box">
-            <h2 class="features__box--heading">Bookmark in one click</h2>
-            <p class="features__box--heading">Organize your bookmarks however you like. Our simple drag-and-drop interface
-              gives you complete control over how you manage your favourite sites.</p>
-              <footer class="features__footer">
-                <a class="features__button-more button button--block button--more-info" href="#">More info</a>
-              </footer>
-          </div>
-
-
       </div>
+
+      <ul class="tab__list">
+        <li class="tab__item tab__item--active">
+          <a href="#panel-1" class="tab__link">Simple Bookmarking</a>
+        </li>
+        <li class="tab__item">
+          <a href="#panel-2" class="tab__link">Speedy Searching</a>
+        </li>
+        <li class="tab__item">
+          <a href="#panel-3" class="tab__link">Easy Sharing</a>
+        </li>
+      </ul>
+
+      <ul class="pannels">
+        <li id="panel-1" class="pannels__item panel pannels__item--active">
+          <div class="pannel__container container">
+            <img class="panel__img" src="img/panel-item-first.png" alt="" aria-hidden="true" width="536" height="346">
+          <div class="pannel__content">
+            <h3 class="pannel__heading">Bookmark in one click</h3>
+            <p class="pannel__info">Organize your bookmarks however you like. Our simple drag-and-drop interface gives
+              you complete control over how you manage your favourite sites.</p>
+            <a class="button pannel__more-link" href="#">More</a>
+          </div>
+          </div>
+        </li>
+
+        <li id="panel-2" class="pannels__item panel ">
+          <div class="pannel__container container">
+            <img class="panel__img" src="img/panel-item-second.png" alt="" aria-hidden="true" width="468" height="393">
+            <div class="pannel__content">
+              <h3 class="pannel__heading">Intelligent search</h3>
+              <p class="pannel__info">Our powerful search feature will help you find saved sites in no time at all. No
+                need to trawl through all of your bookmarks.</p>
+              <a class="button pannel__more-link" href="#">More</a>
+            </div>
+          </div>
+        </li>
+
+        <li id="panel-3" class="pannels__item panel ">
+          <div class="pannel__container container">
+            <img class="panel__img" src="img/panel-item-third.png" alt="" aria-hidden="true" width="440" height="380">
+            <div class="pannel__content">
+              <h3 class="pannel__heading">Share your bookmarks</h3>
+              <p class="pannel__info">Easily share your bookmarks and collections with others. Create a shareable link
+                that you can send at the click of a button.</p>
+              <a class="button pannel__more-link" href="#">More</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+
     </section>
 
     <!-- EXTENSIONS SECTION -->

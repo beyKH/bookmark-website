@@ -14,10 +14,27 @@ elsButton.forEach(function (button) {
 
 
 
-var elFeaturesItem = document.querySelectorAll('.features__item');
+var elsTabLinks = document.querySelectorAll('.tab__link');
+var elsTabItems = document.querySelectorAll('.tab__item');
+var elsPannels =  document.querySelectorAll('.panel');
 
-elFeaturesItem.forEach(function (featureItem) {
-  featureItem.addEventListener('click',function() {
-    featureItem.classList.add('features__item--active');
+elsTabLinks.forEach(function (tabLink) {
+  tabLink.addEventListener('click',function (e) {
+    e.preventDefault()
+
+
+    elsTabItems.forEach(function (tabItem) {
+      tabItem.classList.remove('tab__item--active');
+    })
+
+    tabLink.parentElement.classList.add('tab__item--active');
+
+    elsPannels.forEach(function (panel) {
+      panel.classList.remove('pannels__item--active');
+    })
+
+    document.querySelector(tabLink.getAttribute('href')).classList.add('pannels__item--active');
+
+
   })
 })
